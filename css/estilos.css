@@ -1,0 +1,673 @@
+/**
+body {
+	background:#000000;	
+	color:fff; 
+}*/
+/*	color de fondo de pantalla
+	color de letra*/
+
+/*** {
+	margin:0;
+	padding:0;
+	color:red;
+}*/
+/*	quita espacios entre linea
+	alinea todo a la izquierda
+	color de letra*/
+
+/*
+h2,cite,h5 {
+	color:red;
+}
+
+h4 {
+	font-size:25px;
+}
+
+p {
+	color:blue;
+}
+
+p span a {
+	color:red;
+	font-size:20px;
+}
+
+.green {
+	color:green;
+}
+
+#purple {
+	color:purple;
+}
+
+a[href="https://www.youtube.com/"] {
+	color:orange;
+	font-size:40px;
+}
+*/
+
+
+/*UNIDADES DE MEDIDA
+	-rem = mas usadas.
+	-em = mas usadas.
+	-px = mas usadas.
+	-%
+	-ip
+	-cm
+	-mm
+	
+	-width = Ancho.*/
+	/*NOTA: Diseño responsite es el diseño adaptable de una pagina*/
+/*
+dody {
+	font-size:10px;
+}
+
+div {
+	font-size:15px;
+}
+
+div p {
+	font-size:2rem;
+}*/
+
+/*div {
+	background:#000;
+	color:#fff;
+	width:90%;
+}*/
+
+
+/*UNIDADES DE COLOR https://htmlcolorcodes.com/es/
+	PALABRAS CLAVE:
+	-aqua
+	-black
+	-red
+	-green
+	-write
+	
+	Forma decimal = rgb: no es una forma practica de utilizarlo
+	Forma hexadecimal = #000*/
+	/*Opacidad se uza mucho: color:rgb(34, 141, 102, "0 o 1 o .5")*/
+
+/*
+h1 {
+	color:aqua;
+}
+
+h4 {
+	color:rgb(34, 141, 102, .5);
+}
+
+h6 {
+	font-size:20px;
+	color:#0004EE;
+}
+*/
+
+
+/*MODELO DE CAJA
+	Nos permite establecer el diseño de nuestro sitio web:
+	width: Ancho.
+	height: Alto.
+	Margin: Margen
+	padding: mangen interno(texto)
+	border: borde del contenido, se utiliza(solid,dotted)*/
+
+/*
+p {
+	background:#ff8000;
+	height:350;
+	width:200px;
+	margin:30px 60px;
+	padding:30px;
+	border:10px solid #000;
+	display:inline-block;
+}
+*/
+
+
+/*FONDOS
+	../imagenes/logo.png(con esto decimos regresamos una carpeta)
+	background-repeat:no-repeat; = no se retipe la imagen
+	background-repeat:repeat-x; = se retipe la imagen horizontalmente
+	ackground-repeat:repeat-y; = se retipe la imagen verticalmente
+	background-attachment:fixed; = Fondo fijo
+	background-attachment:scroll; Fondo movible
+	background-position:50% 0;
+	background-position:500px 200px;
+	background-position:50% 0; = posición del fondo
+	background-position:center 100px; = posición fondo
+	
+	-float:left; = en el div todas las cajas se acomodan desde la izquierda.
+	-float:right; = = en el div todas las cajas se acomodan desde la derecha.*/
+
+/*
+body {
+	background:url(../Imagenes/Logo.png);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:center 100px;
+	color:blue;
+}*/
+
+
+/*POSICIONAMIENTO DE CAJAS
+	position:relative; = desplaza la caja pero deja el espacio en blanco.
+	position:absolute; = desplaza la caja y se corre la siguiente a la posición de la que se movio.
+	top:0px; = posición abajo.
+	bottom:0; = ?
+	right:0; = posición derecha.
+	left:200px; = posición abajo.
+	
+.caja_padre { ==== Forma para posicionar cajas sobre cajas.
+	width:300px;
+	height:300px;
+	position:relative;
+	background:aqua;
+}
+
+
+/*
+.caja {  
+	position:absolute;  = desplaza la caja y se  corre la siguiente a la posición de la que se movio.
+	top:10px;
+	bottom:0px;
+	right:0;
+	left:20px;
+}*/
+
+/*
+.caja {  
+	position:absolute; =  = desplaza la caja y se corre la siguiente a la posición de la que se movio.
+	top:10px;
+	bottom:0px;
+	right:0;
+	left:20px;
+}*/
+
+/*
+.caja {  
+	position:fixed; = la caja queda estatica como marca de agua.
+	top:100px;
+	bottom:0px;
+	right:0;
+	left:200px;
+}*/
+
+/*
+caja {  
+	position:static; = es qeu todo queda igual no sirven los valores de abajo.
+	top:100px;
+	bottom:0px;
+	right:0;
+	left:200px;
+}*/
+
+/*
+div {
+	width:60px;
+	height:60px;
+	background:blue;
+	Color:#fff;
+	font-size:20px;
+	float:right;
+	float:left;
+}*/
+
+/*div {
+	width:60px;
+	height:60px;
+	background:blue;
+	Color:#fff;
+	font-size:20px;
+}*/
+
+
+/*-------------------------Curso de diseño web basico en el canal del falcon master--------------------------------------------------*/
+
+/*TEXTO Y TIPOGRAFIA
+	-color:#ff8000; = orange.
+	-color:#000; = black.
+	-color:;#fff; = blanco.
+	-background:#ccc; = fondo del bloque gris.
+	-color:rgba(0,0,0,.5); = paridad claro
+	
+	-font-family:Arial, Hervetica, Sans-serif, "Myriad Pro"; = para la fuente del documento se coloca asi por si el navegador no tiene esas funetes.
+	-font-size:20px; = Tamaño letra.
+	-font-weight:bold; = Texto en negrilla (con font-weight:normal; = la negrita desaparece esto es para los h1), tambien se puede usar 20px,%,em
+	-text-align:center; (left,right) = alinea el texto.
+	
+	-line-height:30px; = altura de linea, como el interlineado.
+	
+	-text-decoration:underline; (text-decoration:none; = quita subrayado)=  texto subrayado abajo.
+	-text-decoration:overline; = subrayado encima del texto.
+	-text-decoration:line-through; = linea en el medio del texto.
+	
+	-text-transform:capitalize; = todo el texto comienza con la primera letra en mayuscula.
+	-text-transform:uppercase; = todo el texto en mayuscula.
+	-text-transform:lowercase; = Todo el texto en minuscula.
+	
+	-letter-spacing:5px; = Distancia de cada letra.
+	-word-spacing:20px; = Espacios de cada palabra.
+	
+	-text-shadow:5px 5px 5px #ff8000; = sombra en el texto.*/
+
+/*
+h1 {
+	font-weight:bold;
+	background:#ccc;
+	text-align:center;
+}
+
+p {
+	font-family:Arial, Hervetica, Sans-serif, "Myriad Pro";
+	font-size:100%;
+	font-weight:normal;
+	text-align:center;
+	line-height:25px;
+	text-decoration:none;
+	text-transform:normal;
+	letter-spacing:normal;
+	word-spacing:normal;
+	text-shadow:5px 5px 5px #ff8000;
+}*/
+
+
+/*----------------------------------------------ENLACES---------------------------------------------------*/
+
+/*	-margin:10px 20px 10px 0p x; margen va en orden de las manecillas del reloj
+	-display:inline-block; = importante para comvertir texto de linea en bloques
+	-box-shadow:0px 5px 0px #1DBBC6; = Da borde a los bloques.*/
+	
+/*Enlaces que no han sido visitados.
+a:link {
+	color:#0C0E8E;
+}
+
+/*Al pasar el mause, cambia de forma
+Es la que mas se utiliza
+a:hover {
+	text-decoration:underline;
+	text-decoration:line-through;
+	background:#000;
+	color:#fff;
+}
+
+/*Al dar un clic cambia de color.
+a:active {
+	background:#13B600;
+}
+
+a:visited {
+	color:#000;
+}*/
+
+/*
+a.Enlaces {
+	font-size:20px;
+	color:#fff;
+	text-decoration:none;
+	margin:10px 20px 10px 0px;
+	display:inline-block;
+	padding:10px 20px;
+	background:#0A97A0;
+	box-shadow:0px 5px 0px #1DBBC6;
+}
+
+a.Enlaces:hover {
+	box-shadow:0px 2px 0px #000;
+	background:#ccc;
+}
+a.Enlaces:active {
+	box-shadow:none;
+}*/
+
+
+/*-----------------------IMAGENES----------------------------------*/
+
+  /*-height:auto; = Altura imagen.
+	-width:300px; = Ancho de imagen
+	
+img { = para centrar imagen.
+	width:300px;
+	height:auto;
+	margin:auto;
+	display:block;
+}
+	
+	-border-radius:10px; = borde de las imagenes en radio.
+	-border-radius:50%; = borde con circunferencia.*/
+
+/*	
+div img {
+	background:#ccc;
+	width: 300px;
+}
+
+
+img {
+	width:300px;
+	height:auto;
+	/*margin:auto;
+	display:block;
+	border-radius:50%;
+	box-shadow:5px 5px 0px #424242;
+	padding:10px;
+	border:1px solid #000;
+}*/
+
+
+/*---------------------------LISTAS----------------------------------*/
+
+	/*ul = listas desordenadas.
+	-list-style-type:disc; = Por defecto viñeta circulo rellenado.
+	-list-style-type:circle; = Viñeta circulo sin relleno.
+	-list-style-type:square; = Viñeta cuadratica. 
+	
+	ul > ul { = Se coloca asi para coger solo la primera etiqueta.
+		list-style-type:circle;
+	}
+	
+	*ol = Listas ordenadas.
+	-list-style-type:decimal; Por defecto viñeta numeros decimales.
+	-list-style-type:decimal-leading-zero; = Números decimales con un cero.
+	-list-style-type:upper-latin; = Letras del ABCDARIO en mayusculas.
+	-list-style-type:upper-roman; = Números romanos en mayusculas.
+	-list-style-type:lower-latin; = Letras en minusculas.
+	-list-style-type:lower-roman; = Letras en minusculas.
+	
+	-list-style-position:outside; = Por defecto.
+	-list-style-position:inside;= Corre un espacio de linea a la derecha.
+	
+	-background:#ccc; = Fondo del bloque en color gris.
+	
+	.menu li a { = Importante para darle forma al menu.
+		padding:10px 20px;
+		display:inline-block;
+	}
+	
+	.menu li a:hover { = El hover es que pase cuando uno pasa el mause por encima.
+		background:#ccc;
+		color:#000;
+	}
+	*/
+
+/*
+ul {
+	list-style-type:square;
+	list-style-position:outside;
+}
+
+ol {
+	list-style-type:upper-latin-alpha;
+	
+}
+
+.menu {
+	/*convierte en bloques
+	list-style:none;
+	width:100%;
+	background:#000;
+	
+	/*quita espacios
+	margin:0;
+	padding:0;
+
+	/*Centra el menu
+	text-align:center;
+}
+
+.menu li {
+	display:inline-block;
+}
+
+.menu li a {
+	padding:10px 20px;
+	display:inline-block; 
+	color:#fff;
+}
+
+.menu li a:hover {
+	background:#ccc;
+	color:#000;
+}
+*/
+
+/*-------------------------TABLAS------------------------------------*/
+
+	/* https://www.youtube.com/watch?v=tg2HC4HXB_4&list=PLhSj3UTs2_yU0fGoS1bjpHqky4kCEmTbR&index=12&ab_channel=FalconMasters
+	
+	-tr = filas.
+	-td = columnas.
+	-hover = es una seudo clase. 
+	
+	table { = Borde de la tabla.
+		border:1px solid #000;
+	}
+	
+	table td { = Borde de las casillas de la tabla.
+		border:1px solid #000;
+	}
+	
+	-border-collapse:separate; = El borde es separado.
+	-border-collapse:collapse; = El borde es pegado.
+	
+	-padding:20px; = agranda las secciones de la tabla.
+	-width:700px; = ancho de la tabla.
+	
+	Para centrar las trablas:
+	text-align:center; = solo para elementos in-line en la tabla.
+	*/
+/*
+table {
+	border:1px solid #000;
+	border-collapse:collapse;
+	width:700px;
+	/*text-align:center;*/
+	
+	/*Centrar la trabla
+	http://chuwiki.chuidiang.org/index.php?title=Centrado_de_tablas_con_CSS#:~:text=Para%20el%20centrado%20de%20bloques,text%2Dalign%3Acenter%22.
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+table td {
+	border:1px solid #000;
+	padding:20px;
+	
+}
+
+table tr:hover {
+	background:#ccc;
+}
+
+table td:hover {
+	background:#000;
+	color:#fff;
+}
+
+.center { 
+	text-align: center;
+}
+*/
+
+/*-------------------------FORMULARIOS----------------------------------*/
+
+	/*
+	-font-size:12px; = Tamaño de fuente.
+	-display:block; = Importante para convertir todo en bloques.
+	
+	-padding:10px; = Agranda las secciones.
+	
+	/Para ajustar los bordes en el formulario, IMPORTANTE/
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	
+	-border:1px solid #ccc; = borde de los label y textarea.
+	
+	textarea { = Solo se puede extenter el textarea de forma horizontal.
+		resize:horizontal;
+	}
+	-resize:vertical; = Solo se puede extenter el textarea de forma vertical.
+	-resize:both; = Se extender para todos los lados el textarea.
+	-resize:none; = Quita para extender el textarea.
+	
+	-cursor:pointer; = para que al pasar el mause, cambie la forma para clicquearlo.
+	*/
+
+/*
+form {
+	width:20%;
+	border:1px solid #ccc;
+	margin:20px;
+	padding:20px;
+}
+
+label {
+	font-size:12px;
+	display:block;
+	width:100%;
+}
+
+textarea {
+	resize:vertical;
+	max-height:300px;
+	min-height:100px;
+}
+
+input, textarea {
+	margin-bottom:20px;
+	width:100%;
+	padding:10px;
+	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box; /*con solo esta me sirvio para los bordes
+	
+	border:1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+	border:1px solid #1668C4;
+}
+
+input[type="submit"] {
+	margin-bottom:0;
+	background:#1668C4;
+	color:#fff;
+	border:none;
+}
+
+/*para que el boton se vea mas claro.
+input[type="submit"]:hover { /*A esto se le llama seudocodigo
+	background:#4A88F4;
+	cursor:pointer;
+}
+*/
+
+/*---------------ULTIMO VIDEO PAGINA WEB SIMPLE-----------------------*/
+
+	/* 
+	-El elemento HTML <nav> representa una sección de una página 
+	cuyo propósito es proporcionar enlaces de navegación, ya sea 
+	dentro del documento actual o a otros documentos. Ejemplos 
+	comunes de secciones de navegación son menús, tablas de 
+	contenido e índices.
+	
+	-margin:20px auto; = 20px arriba y abajo y automatico.
+	
+	-overflow:hidden; = Importante oculta el contenido de nuestro 
+		contenedor.
+	
+	-text-decoration:none; = Quita el subrayado.
+	
+	-box-sizing:border-box; = Importante soluciona problema de encajonamiento.
+	
+	-margin-bottom:20px; = Separa los bloques.
+	
+	-clear:both; = Salto de linea de los float:left;
+	*/
+:root {
+	--fondo-oscuro:#000;
+	--fondo-claro:#fff;
+	
+	--fuente-negrilla: "Arial Black";
+	--fuente-normal: Arial;
+	--fuente-none:none;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#e6e6e6;
+	font-family: var(--fuente-clara);
+}
+
+header, .main, footer {
+	/*background:#fff;*/
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+}
+
+header nav {
+	background:#528FD5;
+	overflow:hidden;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	float:left;
+}
+
+header nav ul li a {
+	padding:10px 20px;
+	display:block; 
+	color:#fff;
+	text-decoration:none;
+}
+
+header nav ul li a:hover {
+	background:#75ACEC;
+}
+
+.main .articles {
+	width:68.5%;
+	margin-right:1.5%;
+	float:left;
+}
+
+.main .articles article {
+	padding:20px;
+	background: var(--fondo-claro);
+	margin-bottom:20px;
+	font-family: var(--fuente-none);
+}
+
+aside {
+	width:30%;
+	background:#ff8000;
+	float:left;
+	padding:20px;
+	box-sizing:border-box;
+}
+
+footer {
+	background: var(--fondo-oscuro);
+	color:#fff;
+	clear:both;
+	padding:10px 0px;
+	text-align:center;
+}
+
+/*visitar sitio web para hacer paginas web mas avanzadas*/
